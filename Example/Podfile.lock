@@ -1,0 +1,16 @@
+PODS:
+  - KOTMSwift (0.1.0)
+
+DEPENDENCIES:
+  - KOTMSwift (from `../`)
+
+EXTERNAL SOURCES:
+  KOTMSwift:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KOTMSwift: 70a9d8b6ef0844a915e3aafb25ea761569ae2225
+
+PODFILE CHECKSUM: 5dc6d7ac9200261ddc30c3c259a95e0bbba89471
+
+COCOAPODS: 1.7.5

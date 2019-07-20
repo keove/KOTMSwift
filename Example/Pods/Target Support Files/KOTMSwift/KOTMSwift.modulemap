@@ -1,0 +1,6 @@
+framework module KOTMSwift {
+  umbrella header "KOTMSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
