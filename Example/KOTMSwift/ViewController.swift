@@ -7,11 +7,18 @@
 //
 
 import UIKit
+import KOTMSwift
 
-class ViewController: UIViewController {
+@objc class ViewController: UIViewController {
 
+    var u : UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        u = UIView()
+        u.set(kotmTag: "slk")
+        self.view.addSubview(u)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
