@@ -28,10 +28,11 @@ extension NSObject {
     
     
     
-    public func translate(clazz:NSObject.Type) {
+    public func translate() {
         
         var outCount:UInt32 = 0;
-        let properties = class_copyPropertyList(clazz, &outCount)
+        //let properties = class_copyPropertyList(clazz, &outCount)
+        let properties = class_copyPropertyList(type(of: self), &outCount)
         
         for i in 0..<Int(outCount) {
             

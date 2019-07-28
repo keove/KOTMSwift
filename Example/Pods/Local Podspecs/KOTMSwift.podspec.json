@@ -1,6 +1,6 @@
 {
   "name": "KOTMSwift",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "summary": "summary",
   "description": "description",
   "homepage": "https://github.com/keove/KOTMSwift",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/keove/KOTMSwift.git",
-    "tag": "1.0.0"
+    "tag": "1.0.2"
   },
   "platforms": {
     "ios": "8.0"

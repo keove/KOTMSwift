@@ -1,5 +1,5 @@
 PODS:
-  - KOTMSwift (1.0.0)
+  - KOTMSwift (1.0.2)
 
 DEPENDENCIES:
   - KOTMSwift (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KOTMSwift: bce3148c5d0d28b56427b24b2f6c57eecf3f8801
+  KOTMSwift: 4ff0c7dda7b31a48ebeb594eba1f029e4ae44a6b
 
 PODFILE CHECKSUM: 5dc6d7ac9200261ddc30c3c259a95e0bbba89471
 
