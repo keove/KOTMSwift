@@ -31,7 +31,6 @@ extension NSObject {
     public func translate() {
         
         var outCount:UInt32 = 0;
-        //let properties = class_copyPropertyList(clazz, &outCount)
         let properties = class_copyPropertyList(type(of: self), &outCount)
         
         for i in 0..<Int(outCount) {
@@ -39,8 +38,12 @@ extension NSObject {
             let prop = properties![i]
             let propName = property_getName(prop)
             let propNameString = String(cString: propName)
-            
             let candidate : NSObject! = self.value(forKey: propNameString) as? NSObject
+            
+            if candidate == nil {
+                continue
+            }
+            
             let tag : String! = candidate.getKotmTag()
             
             if tag != nil && tag.count > 0 {
@@ -52,33 +55,25 @@ extension NSObject {
                     }
                     btn.setTitle(text, for: .normal)
                 }
-                
                 if candidate is UILabel {
                     let lbl : UILabel! = candidate as? UILabel
                     var text : String! = KOTM.translation(type: .text, tag: tag)
                     if text == nil {
                         text = tag
                     }
-                    
                     lbl.text = text
                 }
-                
                 if candidate is UITextField {
                     let tf : UITextField! = candidate as? UITextField
                     var placeholder : String! = KOTM.translation(type: .placeholder, tag: tag)
                     if placeholder == nil {
                         placeholder = tag
                     }
-                    
                     tf.placeholder = placeholder
                 }
-                
                 if candidate is [String] {
                     
                 }
-                
-            
-                
                 if candidate is NSString {
                     
                     var val : String! = KOTM.translation(type: .value, tag: tag)
@@ -88,15 +83,7 @@ extension NSObject {
                     self.setValue(val, forKey: propNameString)
                 }
             }
-            
-            
-            
         }
-        
-        
-        
-        
-        
     }
     
 }

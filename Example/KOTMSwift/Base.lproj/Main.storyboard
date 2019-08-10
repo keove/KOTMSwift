@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,26 +24,62 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="KOTMTag" value="default_label"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hfg-tT-0hu">
                                 <rect key="frame" x="36" y="617" width="303" height="30"/>
                                 <state key="normal" title="Test"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="KOTMTag" value="hobbydo_test_tag"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAd-KN-pGc">
                                 <rect key="frame" x="36" y="566" width="303" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="systemPinkColor"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ga4-3k-76X">
+                                <rect key="frame" x="36" y="179" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="KOTMTag" value="test_placeholder"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uZ-zv-uYj" customClass="MDCButton">
+                                <rect key="frame" x="26" y="318.5" width="323" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="KOTMTag" value="hobbydo_test_tag"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eWh-FV-RMC" customClass="MDCTextField">
+                                <rect key="frame" x="26" y="368.5" width="323" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="KOTMTag" value="hobbydo_test_tag"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="DAd-KN-pGc" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="3hr-yc-lXD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Hfg-tT-0hu" secondAttribute="trailing" constant="20" id="7JE-5r-ghu"/>
+                            <constraint firstItem="9uZ-zv-uYj" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="986-y7-xlb"/>
+                            <constraint firstItem="9uZ-zv-uYj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Edo-uf-5AS"/>
                             <constraint firstItem="DwV-uB-MvB" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="MFX-w9-0SP"/>
+                            <constraint firstItem="eWh-FV-RMC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="PfI-Ji-DR6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="eWh-FV-RMC" secondAttribute="trailing" constant="10" id="SKj-ef-8Ik"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9uZ-zv-uYj" secondAttribute="trailing" constant="10" id="TCO-94-iRQ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DwV-uB-MvB" secondAttribute="trailing" constant="20" id="TRh-RJ-UuV"/>
                             <constraint firstItem="Hfg-tT-0hu" firstAttribute="top" secondItem="DAd-KN-pGc" secondAttribute="bottom" constant="30" id="d7p-jV-b55"/>
                             <constraint firstItem="Hfg-tT-0hu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="20" id="fAN-rD-vBd"/>
+                            <constraint firstItem="eWh-FV-RMC" firstAttribute="top" secondItem="9uZ-zv-uYj" secondAttribute="bottom" constant="20" id="igi-BQ-8HZ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="DAd-KN-pGc" secondAttribute="trailing" constant="20" id="jDY-1t-l2V"/>
                             <constraint firstItem="DwV-uB-MvB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="120" id="kgV-Dv-iOa"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Hfg-tT-0hu" secondAttribute="bottom" constant="20" id="xyH-PH-rcg"/>
@@ -52,7 +87,11 @@
                     </view>
                     <connections>
                         <outlet property="bottomLabel" destination="DAd-KN-pGc" id="HL5-4Z-kUY"/>
+                        <outlet property="btn" destination="Hfg-tT-0hu" id="9jv-jN-S5Y"/>
+                        <outlet property="mdcBtn" destination="9uZ-zv-uYj" id="6KZ-Wp-ig2"/>
+                        <outlet property="mdcTf" destination="eWh-FV-RMC" id="2mu-hs-L8K"/>
                         <outlet property="sbLabel" destination="DwV-uB-MvB" id="IKm-mL-Udo"/>
+                        <outlet property="tf" destination="Ga4-3k-76X" id="rMq-Sb-sWq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
