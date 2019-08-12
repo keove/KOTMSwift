@@ -33,6 +33,36 @@ public class KOTM {
     }
     
     
+    public static func translate(string:String) -> String! {
+        
+        var translatedString = string
+        
+        do {
+            let regex = try NSRegularExpression(pattern: "(##)[^(##)]*(##)")
+            let matches = regex.matches(in: string, options: [], range: NSRange(location: 0, length: string.count))
+            
+            var parts = [String]()
+            for match in matches {
+                let range = Range(match.range,in: string)!
+                let part = String(string[range])
+                parts.append(part)
+            }
+            
+            for part in parts {
+                let tag = part.replacingOccurrences(of: "##", with: "")
+                let replacement = KOTM.translation(type: .value, tag: tag)
+                translatedString = translatedString.replacingOccurrences(of: part, with: replacement ?? "", options: .literal, range: nil)
+            }
+            
+            return translatedString
+            
+            
+        }
+        catch {
+            return ""
+        }
+        
+    }
 
  
     

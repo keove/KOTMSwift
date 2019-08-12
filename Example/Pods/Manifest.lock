@@ -1,8 +1,9 @@
 PODS:
   - Konnekt (1.0.9)
-  - KOTMSwift (1.0.3)
-  - MaterialComponents/AnimationTiming (85.9.1)
-  - MaterialComponents/Buttons (85.9.1):
+  - KOTMSwift (1.0.4)
+  - MaterialComponents/AnimationTiming (86.0.0)
+  - MaterialComponents/Buttons (86.0.0):
+    - MaterialComponents/Elevation
     - MaterialComponents/Ink
     - MaterialComponents/private/Math
     - MaterialComponents/Ripple
@@ -12,91 +13,96 @@ PODS:
     - MaterialComponents/Typography
     - MDFInternationalization
     - MDFTextAccessibility
-  - "MaterialComponents/Buttons+ButtonThemer (85.9.1)":
+  - "MaterialComponents/Buttons+ButtonThemer (86.0.0)":
     - MaterialComponents/Buttons
     - "MaterialComponents/Buttons+ColorThemer"
     - "MaterialComponents/Buttons+ShapeThemer"
     - "MaterialComponents/Buttons+TypographyThemer"
     - MaterialComponents/Palettes
-  - "MaterialComponents/Buttons+ColorThemer (85.9.1)":
+  - "MaterialComponents/Buttons+ColorThemer (86.0.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Color
-  - "MaterialComponents/Buttons+ShapeThemer (85.9.1)":
+  - "MaterialComponents/Buttons+ShapeThemer (86.0.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Shape
-  - "MaterialComponents/Buttons+TypographyThemer (85.9.1)":
+  - "MaterialComponents/Buttons+TypographyThemer (86.0.0)":
     - MaterialComponents/Buttons
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Ink (85.9.1):
+  - MaterialComponents/Elevation (86.0.0):
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/OverlayWindow (85.9.1):
+  - MaterialComponents/Ink (86.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/OverlayWindow (86.0.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/Palettes (85.9.1)
-  - MaterialComponents/private/Application (85.9.1)
-  - MaterialComponents/private/Color (85.9.1)
-  - MaterialComponents/private/KeyboardWatcher (85.9.1):
+  - MaterialComponents/Palettes (86.0.0)
+  - MaterialComponents/private/Application (86.0.0)
+  - MaterialComponents/private/Color (86.0.0)
+  - MaterialComponents/private/KeyboardWatcher (86.0.0):
     - MaterialComponents/private/Application
-  - MaterialComponents/private/Math (85.9.1)
-  - MaterialComponents/private/Overlay (85.9.1)
-  - MaterialComponents/Ripple (85.9.1):
+  - MaterialComponents/private/Math (86.0.0)
+  - MaterialComponents/private/Overlay (86.0.0)
+  - MaterialComponents/Ripple (86.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
-  - MaterialComponents/schemes/Color (85.9.1):
+  - MaterialComponents/schemes/Color (86.0.0):
     - MaterialComponents/private/Color
-  - MaterialComponents/schemes/Container (85.9.1):
+  - MaterialComponents/schemes/Container (86.0.0):
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Shape
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/schemes/Shape (85.9.1):
+  - MaterialComponents/schemes/Shape (86.0.0):
     - MaterialComponents/ShapeLibrary
     - MaterialComponents/Shapes
-  - MaterialComponents/schemes/Typography (85.9.1):
+  - MaterialComponents/schemes/Typography (86.0.0):
     - MaterialComponents/Typography
-  - MaterialComponents/ShadowElevations (85.9.1)
-  - MaterialComponents/ShadowLayer (85.9.1):
+  - MaterialComponents/ShadowElevations (86.0.0)
+  - MaterialComponents/ShadowLayer (86.0.0):
     - MaterialComponents/ShadowElevations
-  - MaterialComponents/ShapeLibrary (85.9.1):
+  - MaterialComponents/ShapeLibrary (86.0.0):
     - MaterialComponents/private/Math
     - MaterialComponents/Shapes
-  - MaterialComponents/Shapes (85.9.1):
+  - MaterialComponents/Shapes (86.0.0):
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
-  - MaterialComponents/Snackbar (85.9.1):
+  - MaterialComponents/Snackbar (86.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
+    - MaterialComponents/Elevation
     - MaterialComponents/OverlayWindow
     - MaterialComponents/private/Application
     - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
     - MaterialComponents/private/Overlay
     - MaterialComponents/ShadowElevations
     - MaterialComponents/ShadowLayer
     - MaterialComponents/Typography
-  - "MaterialComponents/Snackbar+ColorThemer (85.9.1)":
+  - "MaterialComponents/Snackbar+ColorThemer (86.0.0)":
     - MaterialComponents/schemes/Color
     - MaterialComponents/Snackbar
-  - MaterialComponents/TextFields (85.9.1):
+  - MaterialComponents/TextFields (86.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Palettes
     - MaterialComponents/private/Math
     - MaterialComponents/Typography
     - MDFInternationalization
-  - "MaterialComponents/TextFields+ColorThemer (85.9.1)":
+  - "MaterialComponents/TextFields+ColorThemer (86.0.0)":
     - MaterialComponents/TextFields
     - MaterialComponents/Themes
-  - "MaterialComponents/TextFields+Theming (85.9.1)":
+  - "MaterialComponents/TextFields+Theming (86.0.0)":
     - MaterialComponents/schemes/Container
     - MaterialComponents/TextFields
     - "MaterialComponents/TextFields+ColorThemer"
     - "MaterialComponents/TextFields+TypographyThemer"
-  - "MaterialComponents/TextFields+TypographyThemer (85.9.1)":
+  - "MaterialComponents/TextFields+TypographyThemer (86.0.0)":
     - MaterialComponents/schemes/Typography
     - MaterialComponents/TextFields
-  - MaterialComponents/Themes (85.9.1):
+  - MaterialComponents/Themes (86.0.0):
     - MaterialComponents/schemes/Color
     - MaterialComponents/schemes/Typography
-  - MaterialComponents/Typography (85.9.1):
+  - MaterialComponents/Typography (86.0.0):
     - MaterialComponents/private/Application
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
@@ -128,8 +134,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Konnekt: 943e5e762a2cd727ca4807d47d9de977ea0aa9a3
-  KOTMSwift: 2224efac7e9512bdd3b64a6264fe083a5d3006b1
-  MaterialComponents: fff1ae633abfd8cbfa1b6aad88c13ed64fe523ee
+  KOTMSwift: 3a3d353369774bc17d0b6210cb986360a6eef0ee
+  MaterialComponents: 332e82f1b0976f137e5e5d1d261208df5dc1b67d
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
 

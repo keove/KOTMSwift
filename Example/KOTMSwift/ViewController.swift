@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     let a = NSObject()
     @IBOutlet weak var tf: UITextField!
     @IBOutlet weak var btn: UIButton!
-    @objc var varBtn : UIButton! // because if the variable is not exposed to the objc-runtime, it will not be translated
+    @objc var varBtn : UIButton! // because if the variable is not exposed to the objc-runtirme, it will not be translated
     @IBOutlet weak var sbLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
     @IBOutlet weak var nilOutletLabel: UILabel!
@@ -40,6 +40,10 @@ class ViewController: UIViewController {
             KOTM.setTranslationMap(map: (result as? String) ?? "")
             print(result)
             self.translate()
+            
+            let testString =  "##okay##asldks ##yes##sldkf .dsilkfd ahahsldkflsd ##no##sd# sildkfsd . . .15ri4l2ık 34tf ## ## sldkfsdl"
+            let testResult = KOTM.translate(string: testString)
+            print(testResult)
         }
         
         
