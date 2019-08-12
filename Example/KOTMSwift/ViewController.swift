@@ -44,6 +44,9 @@ class ViewController: UIViewController {
             let testString =  "##okay##asldks ##yes##sldkf .dsilkfd ahahsldkflsd ##no##sd# sildkfsd . . .15ri4l2ık 34tf ## ## sldkfsdl"
             let testResult = KOTM.translate(string: testString)
             print(testResult)
+            
+            let noKeyTest = KOTM.translation(type: .value, tag: "non_existing_key")
+            print(noKeyTest)
         }
         
         

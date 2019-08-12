@@ -44,7 +44,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8FDDE203AFD7FA90D21761C9 /* Pods-KOTMSwift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOTMSwift_Example.release.xcconfig"; path = "Target Support Files/Pods-KOTMSwift_Example/Pods-KOTMSwift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A3262BCA543D68BBA4C1570A /* Pods-KOTMSwift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOTMSwift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-KOTMSwift_Tests/Pods-KOTMSwift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC0B901556F1E3875D5AB765 /* KOTMSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KOTMSwift.podspec; path = ../KOTMSwift.podspec; sourceTree = "<group>"; };
+		BC0B901556F1E3875D5AB765 /* KOTMSwift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = KOTMSwift.podspec; path = ../KOTMSwift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C8F032DF114022698DB2F204 /* Pods_KOTMSwift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KOTMSwift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBA3CBB43D85594101426CB0 /* Pods_KOTMSwift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KOTMSwift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */

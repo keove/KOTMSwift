@@ -28,7 +28,7 @@ public class KOTM {
             }
         }
         
-        return nil
+        return tag
         
     }
     
