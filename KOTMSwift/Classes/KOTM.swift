@@ -10,7 +10,9 @@ import Foundation
 
 public class KOTM {
     
-   
+   public static func translation(tag:String) -> String {
+       return KOTM.translation(type: .value, tag: tag)
+   }
     
     public static func translation(type:ElementType,tag:String) -> String! {
         let map = KOTM.map()
@@ -70,6 +72,7 @@ public class KOTM {
         case value = "value";
         case text = "text";
         case placeholder = "placeholder";
+        case validation = "validation";
     }
     
     public static func setSelectedLanguage(lang:String) {
@@ -92,7 +95,7 @@ public class KOTM {
         UserDefaults.standard.set(map, forKey: "kotm")
     }
     
-    public static func map() -> NSMutableDictionary! {
+    public static func map() -> NSMutableDictionary? {
         let mapString : String! = UserDefaults.standard.string(forKey: "kotm")
         if mapString == nil || mapString.count < 1 {
             return nil

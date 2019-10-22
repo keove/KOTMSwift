@@ -26,7 +26,10 @@ extension NSObject {
         return objc_getAssociatedObject(self, &KotmAssocationKeys.object) as? String
     }
     
-    
+    public func validationString() -> String {
+        let tag : String? = getKotmTag()
+        return KOTM.translation(type: .validation, tag: tag ?? "no_tag")
+    }
     
     public func translate() {
         
@@ -49,7 +52,7 @@ extension NSObject {
             if tag != nil && tag.count > 0 {
                 if candidate is UIButton {
                     let btn : UIButton! = candidate as? UIButton
-                    var text : String! = KOTM.translation(type: .text, tag: tag)
+                    var text : String! = KOTM.translation(type: .value, tag: tag)
                     if text == nil {
                         text = tag
                     }
@@ -57,7 +60,7 @@ extension NSObject {
                 }
                 if candidate is UILabel {
                     let lbl : UILabel! = candidate as? UILabel
-                    var text : String! = KOTM.translation(type: .text, tag: tag)
+                    var text : String! = KOTM.translation(type: .value, tag: tag)
                     if text == nil {
                         text = tag
                     }
@@ -65,7 +68,7 @@ extension NSObject {
                 }
                 if candidate is UITextField {
                     let tf : UITextField! = candidate as? UITextField
-                    var placeholder : String! = KOTM.translation(type: .placeholder, tag: tag)
+                    var placeholder : String! = KOTM.translation(type: .value, tag: tag)
                     if placeholder == nil {
                         placeholder = tag
                     }
